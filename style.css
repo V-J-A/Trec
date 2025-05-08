@@ -1,4 +1,23 @@
 /* Estilo del carrusel */
+body {
+    background-color: #9dc95b; /* Verde pastel */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+}
+.subTitulo {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #666;
+}
+
 .carousel {
     position: relative;
     width: 90%;
@@ -71,3 +90,12 @@
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+.plan img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
