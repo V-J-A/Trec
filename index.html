@@ -12,6 +12,20 @@
 <body>
   <main>
     <h1>Graficador de Funciones</h1>
+    <form id="formulario">
+      <select id="tipoFuncion" name="tipoFuncion" required>
+        <option value="sin">Seno</option>
+        <option value="cos">Coseno</option>
+        <option value="tan">Tangente</option>
+      </select>
+      <input type="number" id="inicio" name="inicio" placeholder="Inicio"  />
+      <input type="number" id="final" name="final" placeholder="Final"  />
+      <input type="number" id="amplitud" name="amplitud" placeholder="Amplitud" />
+      <input type="number" id="alturaInicio" name="alturaInicio" placeholder="AlturaInicio" />
+      <center><label for="amplitud">Cantidad de puntos</label></center>
+      <input min="3" max="99"type="range" id="amplitud" name="amplitud" placeholder="Amplitud" required />
+      <center><span id="valor-amplitud">51</span></center>
+      <button type="form" id="ahhhh">Graficar</button>
     <canvas id="grafico" width="1200" height="600"></canvas>
   </main>
 

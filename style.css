@@ -13,10 +13,10 @@ form {
   display: grid;
   gap: 0.8rem;
   margin-bottom: 2rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.342);
   padding: 1rem;
   border-radius: 6px;
-  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.295);
 }
 
 canvas {
@@ -25,4 +25,18 @@ canvas {
   height: 500px;
   margin: 2rem auto;
   display: block;
+}
+
+/* Sombra para todos los apartados principales */
+form,
+canvas,
+section,
+.plans,
+.plan,
+.plans-container {
+  box-shadow: 0 4px 16px rgba(127, 248, 204, 0.626), 0 1.5px 6px rgba(144, 255, 8, 0.434);
+}
+
+input{
+  box-shadow: 0 4px 16px rgba(152, 234, 204, 0.199), 0 1.5px 6px rgba(194, 225, 156, 0.232);
 }
