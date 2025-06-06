@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Graficar Funciones</title>
+  <title id="elTitulo">Fede Traductors</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
   <script src="script.js" defer></script>
@@ -11,22 +11,52 @@
 
 <body>
   <main>
-    <h1>Graficador de Funciones</h1>
+    <h1 id="titulo-pagina">Fede Traductors</h1>
     <form id="formulario">
       <select id="tipoFuncion" name="tipoFuncion" required>
         <option value="sin">Seno</option>
         <option value="cos">Coseno</option>
         <option value="tan">Tangente</option>
       </select>
-      <input type="number" id="inicio" name="inicio" placeholder="Inicio"  />
-      <input type="number" id="final" name="final" placeholder="Final"  />
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="checkbox" name="checkbox" checked />
+        <input type="checkbox" id="checkbox2" name="checkbox2" />
+        <span id="checkbox-label">Cambiar modo de los sliders</span>
+      </div>
+      <div id="inicio-container">
+        <input type="range" id="inicio" value="0" name="inicio" placeholder="Inicio" />
+        <span id="valor-inicio">0</span>
+      </div>
+      <div id="basta-container">
+        <input type="number" id="basta" name="basta" />
+      </div>
+      <div id="callate">
+        <input type="number" id="imSoTired" name="imSoTired" />
+      </div>
+      <div id="final-container">
+        <input type="range" id="final" value="6.28" name="final" placeholder="Final" />
+        <span id="valor-final">2*π</span>
+      </div>
+      <div class="input-group">
       <input type="number" id="amplitud" name="amplitud" placeholder="Amplitud" />
       <input type="number" id="alturaInicio" name="alturaInicio" placeholder="AlturaInicio" />
-      <center><label for="amplitud">Cantidad de puntos</label></center>
-      <input min="3" max="99"type="range" id="amplitud" name="amplitud" placeholder="Amplitud" required />
-      <center><span id="valor-amplitud">51</span></center>
+      <input type="number" id="anguloDeFase" name="anguloDeFase" placeholder="Angulo de Fase" />
+      <input type="number" id="pulso" name="pulso" placeholder="Pulsación" />
+      </div> 
+      <div id="color-container">
+        <input type="color" id="color" name="color" placeholder="Color de Grafico" />
+        <span id="elColor">Color de Grafico</span>
+      </div>
+      <div id="color-pagina">
+        <input type="color" id="colorPagina" name="colorPagina" placeholder="Color de Pagina" />
+        <span id="elColorPagina">Color de Pagina</span>
+      </div>
+      <center><span for="amplitud">Cantidad de puntos</span></center>
+      <input min="3" max="201" type="range" id="amplitudes" name="amplitude" placeholder="Amplitudes" required />
+      <center><span id="valor-amplitud">102</span></center>
       <button type="form" id="ahhhh">Graficar</button>
-    <canvas id="grafico" width="1200" height="600"></canvas>
+      <canvas id="grafico" width="1200" height="600"></canvas>
   </main>
 
 </body>

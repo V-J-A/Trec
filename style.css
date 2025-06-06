@@ -13,10 +13,8 @@ form {
   display: grid;
   gap: 0.8rem;
   margin-bottom: 2rem;
-  background-color: rgba(255, 255, 255, 0.342);
   padding: 1rem;
   border-radius: 6px;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.295);
 }
 
 canvas {
@@ -39,4 +37,63 @@ section,
 
 input{
   box-shadow: 0 4px 16px rgba(152, 234, 204, 0.199), 0 1.5px 6px rgba(194, 225, 156, 0.232);
+}
+
+.idontknow {
+  display : none;
+}
+
+input[type="range"] {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: left;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  flex-wrap: wrap; /* Permite que los checkbox se ajusten en varias líneas si es necesario */
+  gap: 0.3; /* Espacio entre los checkbox */
+  padding: 3px;
+  background-color: rgba(255, 159, 249, 0.186);
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.189);
+}
+
+input[type="checkbox"] {
+  width: 5%;
+  height: 60%;
+  margin: 1%; /* Elimina margen extra */
+  padding: 1%; /* Añade un poco de espacio interno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox */
+  box-shadow: 0 3% 4% rgba(0, 0, 0, 0.189), 0 2% 3% rgba(255, 255, 255, 0.145);
+  border-radius: 1%; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+  background-color: #c83a3a; /* Color de fondo por defecto */
+  border: 2% solid #ff0909; /* Borde por defecto */
+}
+
+input[type="number"] {
+  width: 40%;
+  height: 10%;
+  margin: 2%; /* Elimina margen extra */
+  padding: 2%; /* Añade un poco de espacio interno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.189), 0 1.5px 6px rgba(255, 255, 255, 0.145);
+  border-radius: 3%; /* Bordes redondeados */
+}
+
+.input-group {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 1%;
+  flex-wrap: wrap; /* Permite que los inputs se ajusten en varias líneas si es necesario */
+  gap: 0.3; /* Espacio entre los inputs */
+  padding: 1%;
+  background-color: rgba(255, 159, 249, 0.186);
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.189);
 }
